@@ -1,0 +1,45 @@
+<html>
+<body>
+    <title>Animal Information</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script src=
+        "https://www.google.com/recaptcha/api.js" async defer>
+    </script>
+
+<form action="demo.php" method="post">
+Name of the animal: <input type="text" name="a_name"><br>
+Category: <input type="radio" id="Herbivores" name="category" value="Herbivores">Herbivores<br>
+<input type="radio" id="Omnivores" name="category" value="Omnivores">Omnivores<br>
+<input type="radio" id="Carnivores" name="category" value="Carnivores">Carnivores<br>
+Description: <textarea id="d_name" name="d_name" rows="4" cols="50" ></textarea><br>
+
+Life expectancy:  <select name="Life" class="select">
+    <option value=" " >Life Expectancy</option>
+    <option value="01" >0-1 year</option>
+    <option value="15" >1-5 year</option>
+    <option value="510">5-10 year</option>
+    <option value="10">10+ years</option>
+    
+</select><br>
+<div id="wrapper">
+
+    
+    <form method="POST" enctype="multipart/form-data">        
+
+        Image<input type="file" name="file" >
+
+        <div>
+            <button type="submit" name="uploadfile">UPLOAD</button>
+        </div>
+    </form>
+
+        <div class="g-recaptcha" 
+                data-sitekey="6LdX5Y0eAAAAALR7n4uPAzaZNNfntsMSTQpOvoWL">
+        </div>
+        <br>
+
+<input type="submit">
+</form>
+
+</body>
+</html>
